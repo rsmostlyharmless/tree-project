@@ -1,0 +1,100 @@
+body {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.h1 {
+    color: darkred;
+    text-decoration: underline darkred;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 2px;
+    border-color: darkred;
+
+}
+
+.card {
+    border: 1px solid yellowgreen;
+    box-shadow: 2px 4px 12px darkred;
+    border-radius: 4px;
+    padding: 15px 60px 15px 60px;
+    margin: 12px;
+    max-width: 200px;
+    height: fit-content;
+}
+
+.h3 {
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li::before {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: darkred; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+    width: 407.75px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-mid-left {
+    display: flex;
+    flex-direction: column;
+    width: 815.50px;
+    height: 200px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.top-mid-right {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 200px;
+    width: 407.75px;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+}
