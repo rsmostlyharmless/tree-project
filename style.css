@@ -1,6 +1,7 @@
 body {
     background-color: yellowgreen;
     display: flex;
+    flex: auto;
     flex-direction: column;
     height: auto;
 }
@@ -18,10 +19,9 @@ body {
 .body {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border: solid 2px;
     border-color: darkred;
-
+    padding: 20px;
 }
 
 .card {
@@ -29,8 +29,7 @@ body {
     box-shadow: 2px 4px 12px darkred;
     border-radius: 4px;
     padding: 15px 60px 15px 60px;
-    margin: 12px;
-    max-width: 200px;
+    margin: 40px;
     height: fit-content;
 }
 
@@ -62,7 +61,7 @@ li::before {
 
 .text {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .middle {
@@ -71,30 +70,69 @@ li::before {
     align-items: center;
 }
 
+.container1 {
+    display: flex;
+    flex-shrink: inherit;
+    justify-content: space-around;
+    height: 300px;
+}
+
 .top-left {
     display: flex;
     flex-direction: column;
-    width: 407.75px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
 }
 
-.top-mid-left {
+.top-mid-left, .top-mid-right {
     display: flex;
     flex-direction: column;
-    width: 815.50px;
-    height: 200px;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.top-mid-right {
+.top-right {
     display: flex;
-    flex-direction: column-reverse;
-    height: 200px;
-    width: 407.75px;
-    margin: auto;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+}
+
+.container2 {
+    display: flex;
+    flex-shrink: inherit;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bottom-mid-left, .bottom-mid-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: darkred;
+    padding: 10px;
+    
+}
+
+.other-text {
+    margin-top: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 105px;
 }
